@@ -1,0 +1,16 @@
+This plugin will perform mask validation based on an arbitrary regular
+expression. It will take the current input value, plus the incoming
+character in the keydown event and test against the provided regex to
+assert if the incoming character should be accepted or not.
+
+In terms, it is a bit alike the keyfilter plugin, but it tests the
+incoming character in the context of the whole string.
+
+USAGE:
+
+  $('.float').regexMask(/^\d+(,\d+)?$/);
+
+or you can use one of the named masks, which include:
+
+  float-ptbr
+  float-enus
