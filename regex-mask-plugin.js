@@ -6,6 +6,8 @@
             mask = /^((\d{1,3}(\.\d{3})*(((\.\d{0,2}))|((\,\d*)?)))|(\d+(\,\d*)?))$/;
         } else if (mask == 'float-enus') {
             mask = /^((\d{1,3}(\,\d{3})*(((\,\d{0,2}))|((\.\d*)?)))|(\d+(\.\d*)?))$/;
+        } else if (mask == 'integer') {
+            mask = /^\d+$/;
         } else {
             try {
                 mask.test("");
